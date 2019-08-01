@@ -1,0 +1,24 @@
+{
+  "name": "haplo-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "cypress": "^3.4.1",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "handlebars": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

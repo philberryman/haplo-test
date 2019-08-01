@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Write a story ...</title>
+</head>
+
+<body>
+
+    <a href="/" data-test-id="back">Back to the start</a>
+    <table border="1">
+        <tr>
+            <td width="200">
+
+            </td>
+            <td width="300">
+                {{#if children.[0].story}}
+                <a href="/{{children.[0].id}}" data-test-id="link-0">{{children.[0].story}}</a>
+                {{else}}
+                <form action="/" method="POST">
+                    <textarea rows="2" cols="33" name="story" id="textarea-0"
+                        data-test-id="textarea-0">{{children.[0].story}}</textarea><br />
+                    <input type="hidden" name="pageId" value={{children.[0].id}}>
+                    <input type="hidden" name="parentId" value={{children.[0].parentId}}>
+                    <input type="hidden" name="position" value="0">
+                    <input type="submit" data-test-id="submit-0" /><br /><br />
+                </form>
+                {{/if}}
+            </td>
+            <td width="200"></td>
+        </tr>
+        <tr>
+            <td>
+                {{#if children.[3].story}}
+                <a href="/{{children.[3].id}}" data-test-id="link-3">{{children.[3].story}}</a>
+                {{else}}
+                <form action="/" method="POST">
+                    <textarea rows="2" cols="33" name="story" id="textarea-3"
+                        data-test-id="textarea-3">{{children.[3].story}}</textarea><br />
+                    <input type="hidden" name="pageId" value={{children.[3].id}}>
+                    <input type="hidden" name="parentId" value={{children.[3].parentId}}>
+                    <input type="hidden" name="position" value="3">
+                    <input type="submit" data-test-id="submit-3" /><br /><br />
+                </form>
+                {{/if}}
+
+            </td>
+            <td>{{thisPage.story}}</td>
+            <td>
+                {{#if children.[1].story}}
+                <a href="/{{children.[1].id}}" data-test-id="link-1">{{children.[1].story}}</a>
+                {{else}}
+                <form action="/" method="POST">
+                    <textarea rows="2" cols="33" name="story" id="textarea-1"
+                        data-test-id="textarea-1">{{children.[1].story}}</textarea><br />
+                    <input type="hidden" name="pageId" value={{children.[1].id}}>
+                    <input type="hidden" name="parentId" value={{children.[1].parentId}}>
+                    <input type="hidden" name="position" value="1">
+                    <input type="submit" data-test-id="submit-1" /><br /><br />
+                </form>
+                {{/if}}
+
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                {{#if children.[2].story}}
+                <a href="/{{children.[2].id}}" data-test-id="link-2">{{children.[2].story}}</a>
+                {{else}}
+                <form action="/" method="POST">
+                    <textarea rows="2" cols="33" name="story" id="textarea-2"
+                        data-test-id="textarea-2">{{children.[2].story}}</textarea><br />
+                    <input type="hidden" name="pageId" value={{children.[2].id}}>
+                    <input type="hidden" name="parentId" value={{children.[2].parentId}}>
+                    <input type="hidden" name="position" value="2">
+                    <input type="submit" data-test-id="submit-2" /><br /><br />
+                </form>
+                {{/if}}
+
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
