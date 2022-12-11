@@ -14,7 +14,7 @@
   "dependencies": {
     "consolidate": "^0.15.1",
     "cypress": "^3.4.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.16.2",
     "handlebars": "^4.1.2"
   },
